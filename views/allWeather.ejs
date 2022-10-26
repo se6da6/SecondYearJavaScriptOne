@@ -1,0 +1,13 @@
+<h1>Week Weather for All Locations: </h1>
+<% for(const location in allWeather) { %>
+
+    <h1><%= location  %>'s Weekly Weather</h1>
+    <% for(const day in allWeather[location]) { %>
+
+        <h3><%= allWeather[location][day].name  %> </h3>
+        <h5>Temperature : <%= allWeather[location][day].heat  %></h5>    
+        <h5>Wind speed : <%= allWeather[location][day].wind  %></h5>  
+        <h5>Weather detail : <%= allWeather[location][day].details  %></h5>  
+        <h5>Hours of sun : <%= allWeather[location][day].hrsOfSun  %></h5>  
+    <% } %>
+<% } %>

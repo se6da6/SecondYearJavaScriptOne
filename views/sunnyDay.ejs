@@ -1,0 +1,10 @@
+<h1>  <%= location %>'s Sunny Days </h1>
+<ul>
+    <% for(let i = 0; i < sunnyDays.length; i++) { %>
+    <li> <%= sunnyDays[i] %> </li>
+
+    <% } %>
+</ul>
+<% if (sunnyDays.length === 0) { %>
+    <h5> No Sunny Days  </h5>
+<% } %>

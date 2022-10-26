@@ -1,0 +1,11 @@
+
+<h1><%= location  %></h1>
+<% for(const day in singleLocationWeather) { %>
+
+    <h3><%= singleLocationWeather[day].name  %> : </h3>
+    <h5>Temperature : <%= singleLocationWeather[day].heat  %></h5>
+    <h5>Wind speed : <%= singleLocationWeather[day].wind  %></h5>
+    <h5>Details : <%= singleLocationWeather[day].detail  %></h5>
+    <h5>Hours of sun : <%= singleLocationWeather[day].hrsOfSun  %></h5>
+    
+<% } %>
